@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Surprise cho Quỳnh</title>
+    <link rel="stylesheet" href="./style/styel.css" />
+  </head>
+  <body>
+    <div class="card" id="card">
+      <canvas id="balloons"></canvas>
+      <div class="sparkle" id="sparkle"></div>
+      <div>
+        <h1>🎈 Hi Quỳnh! 🎈</h1>
+        <p class="lead">Ấn vào bắt đầu đi nè! 😉</p>
+        <div class="center">
+          <div style="flex: 1">
+            <p style="font-weight: 500">Nhấn nút bên dưới để bắt đầu:</p>
+            <button class="btn" id="startBtn">Bắt đầu thôi! 🎉</button>
+          </div>
+          <div>
+            <button class="ghost" id="resetBtn">Đặt lại</button>
+          </div>
+        </div>
+
+        <div class="quiz" id="quiz" style="display: none">
+          <div class="question">Quỳnh thích điều gì nhất?</div>
+          <div class="choices">
+            <div class="choice" data-choice="icecream">
+              <span class="choice-emoji">🍦</span>
+              <span>Ăn kem</span>
+            </div>
+            <div class="choice" data-choice="food">
+              <span class="choice-emoji">🍔</span>
+              <span>Ăn uống</span>
+            </div>
+            <div class="choice" data-choice="matcha">
+              <span class="choice-emoji">☕</span>
+              <span>Uống Matcha latte</span>
+            </div>
+            <div class="choice" data-choice="shopping">
+              <span class="choice-emoji">👗</span>
+              <span>Mua sắm</span>
+            </div>
+            <div class="choice" data-choice="photo">
+              <span class="choice-emoji">🌸</span>
+              <span>Chụp ảnh – sống ảo nhẹ nhàng</span>
+            </div>
+            <div class="choice" data-choice="relax">
+              <span class="choice-emoji">🧘‍♀️</span>
+              <span>Thư giãn & tự chăm sóc bản thân</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="result" id="result">
+          <div class="emoji-big" id="resultEmoji">💖</div>
+          <div>
+            <h2 class="result-title" id="resultTitle">Quỳnh siêu dễ thương!</h2>
+            <p class="result-text" id="resultText">Đây là kết quả nhé...</p>
+            <div
+              style="
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+                margin-top: 16px;
+                flex-wrap: wrap;
+              "
+            >
+              <button class="btn" id="tryAgainBtn">Chọn lại 🔄</button>
+              <button class="ghost" id="closeBtn">Đóng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
